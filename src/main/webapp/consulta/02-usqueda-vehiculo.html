@@ -1,0 +1,165 @@
+﻿﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>DATUM - Consulta Vehiculos</title>
+        <meta name="description" content="numafiliacion">
+
+        <link rel="stylesheet" href="../css/main.css">
+        <style>
+            table tbody tr:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <div id="sidr">
+            <ul>
+                <li><a href="" id="close-menu-inside"><span class="glyphicon glyphicon-remove"></span></a></li><li><a href=""></a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2><span class="glyphicon glyphicon-edit"></span> Tareas</h2>
+                </li>
+                <li>
+                    <a href="01-busqueda-cliente.html">B&uacute;squeda de veh&iacute;culos</a>
+                </li>
+                <li>
+                    <a href="02-usqueda-vehiculo.html">B&uacute;squeda de clientes</a>
+                </li>
+            </ul>
+            <ul class="visible-xs-block">
+                <li><h2><span class="glyphicon glyphicon-cog"></span> Herramientas</h2></li>
+                <li><a href="../index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
+                <li><a href="#"><span class="glyphicon glyphicon-alert"></span> Ayuda</a>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a>
+            </ul>
+        </div>
+        <div id="overlay"></div>
+
+        <div id="app-header">
+            <a id="simple-menu" class="menu-button" href="#sidr"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            <img src="../images/logo-s.PNG" />
+            <a id="dash-bt1" class="dash-bt hidden-xs" href="../index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
+            <a id="dash-bt-ayuda" class="dash-bt hidden-xs" href=""><span class="glyphicon glyphicon-alert"></span> Ayuda</a>
+            <a id="dash-bt-salir" class="dash-bt hidden-xs" href=""><span class="glyphicon glyphicon-log-out"></span> Salir</a>
+            <a id="dash-bt-user" class="dash-bt hidden-xs" href=""><span class="glyphicon glyphicon-user"></span> mikel.escobar </a>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="page-header">
+                    <div class="col-md-12 main">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h1>B&Uacute;SQUEDA DE VEH&Iacute;CULOS</h1>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 main">
+                    <div class="main-contents">
+
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="info-pasos">
+                                    <h3>B&uacute;scar veh&iacute;culo</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="detalle-cliente"><span>B&uacute;sque la informaci&oacute;n de clientes por veh&iacute;culos</span></div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+
+                                <form action="">
+                                    <div id="formulario-renovacion-1" class="form-group">
+                                        <label for="vehiculo_num">Ingrese el n&uacute;mero del veh&iacute;culo</label>
+                                        <input class="form-control" type="text" id="vehiculo_num" name="vehiculo_num" tabindex="1" />
+                                    </div>
+                                    <div class="table-responsive">                   
+                                        <table id="tblVehiculo" class="tablasJSON table table-striped">
+                                            <caption><h4>Datos del veh&iacute;culo <b id="fechaCitaBusqueda"></b></h4></caption>
+
+                                            <thead>
+                                            <th>Marca</th>
+                                            <th>Modelo</th>
+                                            <th>Tipo</th>
+                                            </thead>
+                                            <tbody id="tblBodyVehiculo">
+
+                                            </tbody>
+                                        </table>
+                                    </div> 
+                                </form>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group pull-right">
+                                    <input type="button" name="btnBuscar" id="btnBuscar" value="Buscar clientes" class="btn btn-default" />
+                                </div>
+                                <h2 class="titulo-resultados">Visualización de resultados</h2>
+                                <div class="espacio-resultados">
+                                    <div id="resultado">
+                                        <div class="table-responsive">                   
+                                            <table id="tblPersona" class="tablasJSON table table-striped">
+                                                <thead>
+                                                <th>DUI</th>
+                                                <th>Cliente</th>
+                                                </thead>
+                                                <tbody id="tblBodyPersona">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQUERY -->
+        <script src="../js/jquery-2.2.3.min.js"></script>
+        <!-- BOOTSTRAP , TOUR, MODAL -->
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap-tour.min.js"></script>
+        <script src="../js/eModal.min.js"></script>
+        <script src="../js/alert.js"></script>
+        <!-- MENU LATERAL -->
+        <script src="../js/jquery.sidr.js"></script>
+        <script src="../js/sidr.script.js"></script>
+        <!-- RELOJ -->
+        <script src="../js/countid.min.js"></script>
+        <script src="../js/timer.js"></script>
+        <!-- BPMS API -->
+        <script src="../js/renovaciones/02-recepcion.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

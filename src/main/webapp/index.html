@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DATUM - Consulta Vehiculos</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="canonical" href="/">
+    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
+</head>
+
+
+<body onload="embedCharts();">
+
+    <div id="sidr">
+        <ul>
+            <li>
+                <a href="" id="close-menu-inside"><span class="glyphicon glyphicon-remove"></span></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h2><span class="glyphicon glyphicon-edit"></span> Tareas</h2>
+            </li>
+            <li>
+                <a href="consulta/01-busqueda-cliente.html">B&uacute;squeda de veh&iacute;culos</a>
+            </li>
+            <li>
+                <a href="consulta/02-usqueda-vehiculo.html">B&uacute;squeda de clientes</a>
+            </li>
+        </ul>
+        <ul id="procesorenovaciones">
+            <!--<li>
+                <h2><span class="glyphicon glyphicon-cog"></span> Procesos</h2>
+            </li>
+            <li>
+                <a href="./renovaciones/01-busqueda-clientes.html">Renovaciones</a>
+            </li>-->
+        </ul>
+        <ul class="visible-xs-block">
+            <li>
+                <h2><span class="glyphicon glyphicon-cog"></span> Herramientas</h2>
+            </li>
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
+            <li><a href="#"><span class="glyphicon glyphicon-alert"></span> Ayuda</a>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a>
+        </ul>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="app-header">
+        <a id="simple-menu" class="menu-button" href="#sidr"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        <img src="images/logo-s.PNG" />
+        <a id="dash-bt1" class="dash-bt hidden-xs" href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
+        <a id="dash-bt-ayuda" class="dash-bt hidden-xs" href="#"><span class="glyphicon glyphicon-alert"></span> Ayuda</a>
+        <a id="dash-bt-salir" class="dash-bt hidden-xs" href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a>
+        <a id="dash-bt-user" class="dash-bt hidden-xs" href=""><span class="glyphicon glyphicon-user"></span> mikel.escobar </a>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="page-header">
+                <div class="col-md-12 main">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h1></h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <center>
+                <img src="images/fondo.jpeg" style="width: 80%; padding-top: 50px;" />
+                
+            </center>
+        </div>
+    </div>
+
+
+
+            <!-- JQUERY -->
+            <script src="./js/jquery-2.2.3.min.js"></script>
+            <!-- BOOTSTRAP , TOUR, MODAL -->
+            <script src="./js/bootstrap.min.js"></script>
+            <script src="./js/bootstrap-tour.min.js"></script>
+            <script src="./js/tour.js"></script>
+            <script src="./js/eModal.min.js"></script>
+            <script src="./js/alert.js"></script>
+            <!-- MENU LATERAL -->
+            <script src="./js/jquery.sidr.js"></script>
+            <script src="./js/sidr.script.js"></script>
+            <!-- RELOJ -->
+            <script src="./js/countid.min.js"></script>
+            <script src="./js/timer.js"></script>
+            <!-- COOKIE -->
+            <script src="./js/jquery.cookie.js"></script>
+            <!-- DIGICEL -->
+            <script src="./js/funciones.js"></script>
+            <script src="./js/renovaciones/index.js"></script>
+            <script src="./js/renovaciones/bpms.js"></script>
+</body>
+
+</html>
