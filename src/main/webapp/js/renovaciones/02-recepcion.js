@@ -7,7 +7,7 @@ $(document).ready(function () {
         var settingsVehiculo = {
             "async": true,
             "crossDomain": true,
-            "url": "http://servidor02-prj-base.192.168.99.100.nip.io/SW-Vehiculos-1.0/webresources/vehiculows/vehiculoxid?idvehiculo=" + codigoAuto,
+            "url": "http://servidor01-datum-proyecto.192.168.99.101.nip.io/SW-Vehiculos-1.0/webresources/vehiculows/vehiculoxid?idvehiculo=" + codigoAuto,
             "method": "GET",
             "headers": {
                 "Access-Control-Allow-Origin":"*",
@@ -31,7 +31,7 @@ $(document).ready(function () {
         var settingsPersona = {
             "async": true,
             "crossDomain": true,
-            "url": "http://servidor03-prj-base.192.168.99.100.nip.io/SW-Personas-1.0/webresources/personaws/personaxvehiculo?idvehiculo=" + codigoAuto,
+            "url": "http://servidor02-datum-proyecto.192.168.99.101.nip.io/SW-Personas-1.0/webresources/personaws/personaxvehiculo?idvehiculo=" + codigoAuto,
             "method": "GET",
             "headers": {
                 "Access-Control-Allow-Origin":"*",
